@@ -14,8 +14,8 @@ CREATE TABLE Productos (
     Rubro INT,
     Precio DECIMAL(15, 2),
     URLImagen VARCHAR(120),
-    FOREIGN KEY (Rubro) REFERENCES
-
+    FOREIGN KEY (Rubro) REFERENCES Rubros(Codigo)
+);
 --Ejemplos RUBROS
 INSERT INTO Rubros (Descripcion) 
 VALUES 
@@ -38,6 +38,3 @@ INSERT INTO Productos (Codigo, Descripcion, Rubro, Precio, URLImagen) VALUES
 (8, 'Pastel de Chocolate', 4, 4800.00, 'https://cdn.pixabay.com/photo/2016/11/29/09/08/cake-1869227_960_720.jpg'),
 (9, 'Jugo de Naranja Natural', 5, 2880.00, 'https://cdn.pixabay.com/photo/2016/08/23/15/03/orange-juice-1614822_960_720.jpg'),
 (10, 'Papas Fritas Clásicas', 6, 1728.00, 'https://cdn.pixabay.com/photo/2020/06/23/14/35/french-fries-5330323_960_720.jpg');
-
-
-
